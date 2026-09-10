@@ -4,13 +4,17 @@ import { Process } from "@/components/Process";
 import { ProofSlot } from "@/components/ProofSlot";
 import { Section } from "@/components/Section";
 import { ServiceRows } from "@/components/ServiceRows";
+import { StatsBar } from "@/components/StatsBar";
 import { home } from "@/content/home";
 import { services } from "@/content/services";
+import { stats } from "@/content/stats";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+
+      <StatsBar stats={stats} />
 
       <Section id="what-we-do" title={home.services.title} aside={home.services.aside}>
         <ServiceRows services={services} />

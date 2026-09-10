@@ -29,7 +29,7 @@ Deploy target is Vercel: import the repository and it builds with defaults.
 ```
 app/                 routes (App Router)
   layout.tsx         font, header, ink block footer, skip link
-  page.tsx           home: hero, services, process, proof slot
+  page.tsx           home: hero, stats band, services, process, proof slot
   services/ about/ contact/
   globals.css        the design tokens (@theme) and the hero sequence
 components/          hand-built UI, one file per component
@@ -50,6 +50,7 @@ Everything a person might want to change is in `content/`:
 - `home.ts` — hero sentence, CTA labels, section intros.
 - `services.ts` — the five services: name, one-line summary, what it is, what you receive, who it is for.
 - `process.ts` — the four steps.
+- `stats.ts` — the four metrics in the band under the hero, as display strings (`"$1.5M+"`). Placeholders until real figures exist; the count-up parses the number out and leaves prefix and suffix static.
 - `about.ts` — the About page argument and the "what we will not do" list.
 
 Each file exports plain typed objects. Swapping in a CMS later means replacing the export, not the components.

@@ -274,6 +274,14 @@ Each item: what pass 1 had, what it read as, what changed.
 
 ---
 
+## 2b. Addendum — the stats band (added after the foundation pass)
+
+A full-bleed band of four metrics now sits between the hero and "What we do", built to a separate brief. It follows the system: ink ground, paper text, numbers in the display face at weight 300 with tight tracking (scale and tracking carry the impact, not weight), a faint grid at the hairline weight, left-aligned cells, two columns below 1024px and four above. Numbers count up once on entering the viewport, all together, in 700ms; reduced motion renders the final values. The final value is always in the DOM for assistive tech.
+
+Known tension: the page now has two inverted surfaces, this band and the ink block at the bottom. The stats brief calls the band "the one inverted section" and also says not to touch the CTA, so both stand for now. Resolving it means either moving the CTA and footer onto paper or ruling the band in ink on paper. Decide with the real numbers in.
+
+Values live in `content/stats.ts` and are placeholders until real figures replace them.
+
 ## 3. Things marked `[EDIT]` in the brief, restated so they can be corrected
 
 - Services list: the five in the brief are used verbatim as names; copy is drafted plain and short.
