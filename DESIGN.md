@@ -153,7 +153,7 @@ viewport edge
 │
 │█████████████████████████████████████████████████████████████████████████████ ink block, full bleed, no radius
 │█  Tell us what you need.            Name, company, budget, what you need.  █
-│█  We reply within two working days. [ Start a project ]  hello@plexo.co   █
+│█  We reply within two working days. [ Start a project ]  hello@plexoco.com   █
 │█                                                                          █
 │█  [inverted lockup]     Los Angeles · est. 2026      Services About Contact  ← no middle dots; see critique
 │█████████████████████████████████████████████████████████████████████████████
@@ -223,7 +223,7 @@ Mobile (360).
 - `/` as wireframed. The proof slot is an empty section component with the same rule and split, exported but rendering nothing until it has content.
 - `/services` — the five rows expanded by default, each as: what it is (one paragraph, plain), what you receive (a list of deliverables), who it is for (two or three sentences). Page title in display type in the right column; the left column carries a two-line summary of how to buy.
 - `/about` — the argument, in `body-lg`, right column. Working thesis: *AI made producing marketing cheap. It did not make deciding what to produce cheap, or knowing when the output is wrong. Most agencies now sell the cheap part at the old price. plexo sells the judgment and treats the volume as a given.* Then: why 2026 (the tools finally stopped being a demo), why Los Angeles (the clients and the creative talent are here), and what the agency will not do (pretend a model is a strategist).
-- `/contact` — the form. Success state replaces the form in place: "Sent. We read everything within two working days and reply from hello@plexo.co. If it's urgent, email that address directly." Error state keeps the form, keeps the values, and says what failed and what to try.
+- `/contact` — the form. Success state replaces the form in place: "Sent. We read everything within two working days and reply from hello@plexoco.com. If it's urgent, email that address directly." Error state keeps the form, keeps the values, and says what failed and what to try.
 
 ### 1.9 Principles — what makes it plexo
 
@@ -277,7 +277,7 @@ Each item: what pass 1 had, what it read as, what changed.
 ## 3. Things marked `[EDIT]` in the brief, restated so they can be corrected
 
 - Services list: the five in the brief are used verbatim as names; copy is drafted plain and short.
-- Contact address: `hello@plexo.co` is assumed throughout. Change once in `content/site.ts`.
+- Contact address: `hello@plexoco.com` is assumed throughout. Change once in `content/site.ts`.
 - Hero sentence draft: *plexo is a marketing agency in Los Angeles that uses AI for the work it is good at, and people for the rest.*
 - About thesis: see 1.8.
 - Budget ranges: Under $10k, $10–25k, $25–75k, $75k+, Not sure yet (as chips, not a dropdown).

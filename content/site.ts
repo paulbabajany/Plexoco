@@ -6,8 +6,8 @@ export const site = {
   tagline: "MARKETING | AI",
   description:
     "plexo is a marketing agency in Los Angeles that uses AI for the work it is good at, and people for the rest.",
-  url: "https://plexo.co", // TODO: confirm the production domain
-  email: "hello@plexo.co", // TODO: confirm
+  url: "https://plexoco.com",
+  email: "hello@plexoco.com", // TODO: confirm once a mailbox exists on the domain
   city: "Los Angeles, CA",
   founded: 2026,
   replyWindow: "two working days",

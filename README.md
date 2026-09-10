@@ -73,7 +73,7 @@ The baseline rule is a stroke in the source file (the letters are fills), which 
 - **Contact form.** Build step 5. The page currently shows the email address. The form, its validation and the route handler are next; the email send inside the handler will be a marked `TODO` for the provider.
 - **Proof section.** `components/ProofSlot.tsx` sits between "How we work" and the contact CTA on the home page and renders nothing until it is given items. Adding results later is a content change.
 - **Metadata, OG images, sitemap, robots.** Build step 6. Basic titles and descriptions exist per page; the rest is not there yet.
-- **Domain and email.** `content/site.ts` assumes `plexo.co` and `hello@plexo.co`. Both are marked `TODO`.
+- **Email.** The domain is `plexoco.com`. `content/site.ts` assumes `hello@plexoco.com`, which is marked `TODO` until a mailbox exists on the domain.
 
 ## Motion
 
