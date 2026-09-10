@@ -161,6 +161,22 @@
   .hero-rule, .hero-after { animation: none; }
 }
 
+/* The hero's wireframe sphere: one very slow rotation, static under reduced motion. */
+@keyframes sphere-spin {
+  from { transform: rotateY(0deg) rotateX(0deg); }
+  to   { transform: rotateY(360deg) rotateX(360deg); }
+}
+.sphere-spin {
+  transform-style: preserve-3d;
+  animation: sphere-spin 240s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sphere-spin {
+    animation: none;
+    transform: rotateY(32deg) rotateX(18deg);
+  }
+}
+
 /* Text link: hairline underline that thickens on hover. No arrows. */
 @utility link {
   text-decoration: underline;

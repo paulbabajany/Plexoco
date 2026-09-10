@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ButtonLink } from "./Button";
 import { HeroMark } from "./HeroMark";
+import { WireframeSphere } from "./WireframeSphere";
 import { home } from "@/content/home";
 import { site } from "@/content/site";
 
@@ -20,6 +21,10 @@ export function Hero() {
       </div>
 
       <div className="hero-after mt-14 grid gap-x-6 md:mt-16 md:grid-cols-12 lg:mt-14">
+        {/* The wireframe sphere fills the air in the left four columns, centred beside the sentence. */}
+        <div className="hidden md:col-span-4 md:flex md:items-center md:justify-center">
+          <WireframeSphere className="size-56 lg:size-72" />
+        </div>
         <div className="md:col-span-8 md:col-start-5">
           <h1 id="hero-title" className="max-w-[24ch] text-display text-balance">
             {home.hero.sentence}

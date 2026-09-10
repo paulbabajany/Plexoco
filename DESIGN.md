@@ -274,6 +274,10 @@ Each item: what pass 1 had, what it read as, what changed.
 
 ---
 
+## 2a. Addendum — the hero sphere (added after the foundation pass)
+
+A wireframe sphere (`components/WireframeSphere.tsx`) sits in the hero's left four columns, centred beside the sentence, from 768px up. It came from a reference "geometric sphere" hero and was reduced to the part that belongs here: twelve great circles as hairlines in ink at 25 % opacity on the paper ground. The glow, panning grid, bloom, grain and vignette were dropped; they belong to a dark, neon aesthetic this site deliberately avoids. It rotates once every four minutes and tilts a few degrees toward the pointer; under reduced motion it is a fixed three-quarter view. Hidden below 768px, where there is no air beside the sentence to fill. The circles are the one exception to the no-circles rule, because a sphere is made of them.
+
 ## 2b. Addendum — the results grid (added after the foundation pass)
 
 A bento grid of four metrics sits between the hero and "What we do", replacing an earlier full-bleed stats band. It was brought in from a reference component and restyled to the system rather than shipped as-is: the ink card is the only dark cell and carries a 45° hairline hatch fading from its top-right corner (a drafting texture, so it reads as native); the other three cells are paper with hairline `rule` borders; every corner is `r-4`, not `rounded-3xl`-plus-pills; labels are sentence case in `small`/`mute` rather than tracked caps; numerals are weight 300 with tight tracking. No count-up. The reference's shadcn tokens were mapped, not installed.

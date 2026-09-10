@@ -35,6 +35,7 @@ app/                 routes (App Router)
 components/          hand-built UI, one file per component
   Logo.tsx           the mark, inlined, currentColor; lockup and monogram variants
   HeroMark.tsx       the hero lockup with the rule that draws on load
+  WireframeSphere.tsx  the hairline sphere beside the hero sentence (decorative, md and up)
   logo-paths.ts      GENERATED path data, do not edit
 content/             all copy, typed, one file per page or concept
 scripts/trace-logo.mjs  regenerates components/logo-paths.ts from plexo-logo.svg
