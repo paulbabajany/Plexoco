@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { ButtonLink } from "./Button";
 import { HeroMark } from "./HeroMark";
+import { ParticleField } from "./ParticleField";
 import { WireframeSphere } from "./WireframeSphere";
 import { home } from "@/content/home";
 import { site } from "@/content/site";
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="content pt-14 pb-section md:pt-16 lg:pt-20">
+    <div className="relative">
+      {/* Full-bleed particle field behind the hero. Faint on purpose. */}
+      <ParticleField className="absolute inset-0 h-full w-full" />
+    <section aria-labelledby="hero-title" className="content relative pt-14 pb-section md:pt-16 lg:pt-20">
       {/* About half the content width on desktop so the mark and the sentence share the first screen. */}
       <div className="text-ink md:w-[72%] lg:w-[48%]">
         <HeroMark />
@@ -38,5 +42,6 @@ export function Hero() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
