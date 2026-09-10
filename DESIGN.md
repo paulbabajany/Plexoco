@@ -274,13 +274,13 @@ Each item: what pass 1 had, what it read as, what changed.
 
 ---
 
-## 2b. Addendum — the stats band (added after the foundation pass)
+## 2b. Addendum — the results grid (added after the foundation pass)
 
-A full-bleed band of four metrics now sits between the hero and "What we do", built to a separate brief. It follows the system: ink ground, paper text, numbers in the display face at weight 300 with tight tracking (scale and tracking carry the impact, not weight), a faint grid at the hairline weight, left-aligned cells, two columns below 1024px and four above. Numbers count up once on entering the viewport, all together, in 700ms; reduced motion renders the final values. The final value is always in the DOM for assistive tech.
+A bento grid of four metrics sits between the hero and "What we do", replacing an earlier full-bleed stats band. It was brought in from a reference component and restyled to the system rather than shipped as-is: the ink card is the only dark cell and carries a 45° hairline hatch fading from its top-right corner (a drafting texture, so it reads as native); the other three cells are paper with hairline `rule` borders; every corner is `r-4`, not `rounded-3xl`-plus-pills; labels are sentence case in `small`/`mute` rather than tracked caps; numerals are weight 300 with tight tracking. No count-up. The reference's shadcn tokens were mapped, not installed.
 
-Known tension: the page now has two inverted surfaces, this band and the ink block at the bottom. The stats brief calls the band "the one inverted section" and also says not to touch the CTA, so both stand for now. Resolving it means either moving the CTA and footer onto paper or ruling the band in ink on paper. Decide with the real numbers in.
+Cells: revenue influenced (primary, with one line of context), time to a working build (with a small decorative bar chart), businesses helped, client reviews. Six columns by two rows from 768px, one column below.
 
-Values live in `content/stats.ts` and are placeholders until real figures replace them.
+Values live in `content/stats.ts` and are placeholders until real figures replace them. The review score in particular should not go live without a source.
 
 ## 3. Things marked `[EDIT]` in the brief, restated so they can be corrected
 
