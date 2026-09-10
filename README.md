@@ -50,7 +50,7 @@ Everything a person might want to change is in `content/`:
 - `home.ts` — hero sentence, CTA labels, section intros.
 - `services.ts` — the five services: name, one-line summary, what it is, what you receive, who it is for.
 - `process.ts` — the four steps.
-- `stats.ts` — the results grid under the hero: one primary metric with a line of context, and three supporting ones (time to a working build with its small bar chart, businesses helped, reviews). Display strings (`"$1.5M+"`), all placeholders until real figures exist.
+- `stats.ts` — the results grid under the hero: one primary metric with a line of context, and three supporting ones (time to a working build with its small bar chart, businesses helped, reviews). Each has a `note` shown in the hover tooltip and to screen readers. Display strings (`"$1.5M+"`), all placeholders until real figures exist.
 - `about.ts` — the About page argument and the "what we will not do" list.
 
 Each file exports plain typed objects. Swapping in a CMS later means replacing the export, not the components.

@@ -280,6 +280,8 @@ A bento grid of four metrics sits between the hero and "What we do", replacing a
 
 Cells: revenue influenced (primary, with one line of context), time to a working build (with a small decorative bar chart), businesses helped, client reviews. Six columns by two rows from 768px, one column below.
 
+Hovering a cell shows a pointer-following tooltip (`components/FloatingTooltip.tsx`) with the cell's label and a one-line note on how the figure is measured. It leans into the direction of pointer travel, which is the one playful thing on the site; it is ink on paper at the brand radius, never bold. It is hover-only, so the same note is in the DOM for assistive tech and it never appears on touch. Reduced motion keeps the tooltip but drops the spring and skew.
+
 Values live in `content/stats.ts` and are placeholders until real figures replace them. The review score in particular should not go live without a source.
 
 ## 3. Things marked `[EDIT]` in the brief, restated so they can be corrected
