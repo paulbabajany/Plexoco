@@ -22,7 +22,7 @@ Then open http://localhost:3000.
 | `npm run start` | serve the production build |
 | `npm run typecheck` | `tsc --noEmit` |
 
-Deploy target is Vercel: import the repository and it builds with defaults.
+Deployed on Hostinger at https://plexoco.io, built from pushes to `main` on GitHub. Two things are there because of that host: the build uses webpack (`next build --webpack`) since Hostinger's build servers cannot run Turbopack's native binary, and pages send a five-minute CDN cache lifetime so deploys show without a manual purge. Vercel would also work with no changes.
 
 ## Where things live
 
@@ -74,7 +74,7 @@ The baseline rule is a stroke in the source file (the letters are fills), which 
 - **Contact form.** Build step 5. The page currently shows the email address. The form, its validation and the route handler are next; the email send inside the handler will be a marked `TODO` for the provider.
 - **Proof section.** `components/ProofSlot.tsx` sits between "How we work" and the contact CTA on the home page and renders nothing until it is given items. Adding results later is a content change.
 - **Metadata, OG images, sitemap, robots.** Build step 6. Basic titles and descriptions exist per page; the rest is not there yet.
-- **Email.** The domain is `plexoco.com`. `content/site.ts` assumes `hello@plexoco.com`, which is marked `TODO` until a mailbox exists on the domain.
+- **Email.** The domain is `plexoco.io`. `content/site.ts` assumes `hello@plexoco.io`, which is marked `TODO` until a mailbox exists on the domain.
 
 ## Motion
 
